@@ -5,9 +5,9 @@ import {
 
 export default function HomeScreen() {
   return (
-    <SafeAreaView className="bg-[#fff]">      
-      <View className="items-center justify-center">
-        <Text>Open up App.js to start working on your app!</Text>
+    <SafeAreaView className="bg-[#fff] flex-1">      
+      <View className="justify-center self-center pt-64">
+        <Text>This is Home Screen</Text>
       </View>
     </SafeAreaView>
   );

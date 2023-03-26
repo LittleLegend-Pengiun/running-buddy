@@ -10,10 +10,14 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Welcome" component={WelcomeScreen} 
+        <Stack.Screen name="Welcome" 
+         component={WelcomeScreen} 
          options={{presentation: "transparentModal", headerShown: false}}
         />
-
+        <Stack.Screen name="Home"
+         component={HomeScreen}
+         options={{presentation: "transparentModal", headerShown: false}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -1,9 +1,10 @@
 import React from 'react'
-import { View, Text, Image, Button, TouchableOpacity } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
+import { View, Text, TouchableOpacity } from 'react-native'
 import * as Animatable from 'react-native-animatable';
+import { useNavigation } from '@react-navigation/native';
 
 function WelcomeScreen() {
+  const navigation = useNavigation();
   return (
     <>     
       <View className="bg-[#5D63D1] rounded-xl relative">
@@ -20,6 +21,7 @@ function WelcomeScreen() {
       <View className="items-center justify-center align-middle pt-24">
         <TouchableOpacity 
          className="bg-[#5D63D1] text-white font-bold py-4 px-20 rounded-full"
+         onPress={() => {navigation.navigate("Home")}}
         >
           <Text className="text-white text-xl">Bắt đầu</Text>
         </TouchableOpacity>
