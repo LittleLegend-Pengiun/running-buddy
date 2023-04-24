@@ -12,7 +12,7 @@ export default function HomeScreen() {
     navigation.navigate("Welcome");
   }
   return (
-    <SafeAreaView className="bg-[#fff] flex-1">      
+    <SafeAreaView className="bg-[#fff] flex-1 space-y-3">      
       <View className="justify-center self-center pt-64">
         <Text>This is Home Screen</Text>
         <Button
@@ -22,6 +22,11 @@ export default function HomeScreen() {
         <Button 
          title="Back to home"
          onPress={() => {navigation.navigate("Welcome")}}
+        />
+
+        <Button 
+         title="barcode"
+         onPress={() => {navigation.navigate("Barcode")}}
         />
       </View>
     </SafeAreaView>

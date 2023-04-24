@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen';
 import WelcomeScreen from './screens/WelcomeScreen';
 import LoginScreen from './screens/LoginScreen';
+import BarCodeScreen from './screens/BarCodeScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -22,6 +23,9 @@ function App() {
         <Stack.Screen name="Login"
          component={LoginScreen}
          options={{presentation: "transparentModal", headerShown: false}}
+        />
+        <Stack.Screen name="Barcode" 
+         component={BarCodeScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>
